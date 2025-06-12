@@ -183,7 +183,7 @@ a:hover {
 
   .navbar-links.show {
     display: flex;
-    background-color: #1e293b;
+    background-color: #333;
     padding: 10px 0;
   }
 
