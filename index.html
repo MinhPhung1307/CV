@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Nguyễn Minh Phụng</title>
+  <!-- Font Awesome: Thư viện icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Liên kết đến file CSS riêng -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Banner giới thiệu tên và vai trò -->
+  <header>
+    <h1>Nguyễn Minh Phụng</h1>
+    <p>Lập trình viên Fullstack</p>
+  </header>
+
+  <!-- Navbar điều hướng giữa các phần -->
+  <nav class="navbar">
+    <!-- Nút toggle hiện menu trên điện thoại -->
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <div class="navbar-links" id="navbarLinks">
+      <a href="#thongtin"><i class="fas fa-user"></i> Thông tin</a>
+      <a href="#muctieu"><i class="fas fa-bullseye"></i> Mục tiêu</a>
+      <a href="#kynang"><i class="fas fa-code"></i> Kỹ năng</a>
+      <a href="#duan"><i class="fas fa-project-diagram"></i> Dự án</a>
+      <a href="#lienhe"><i class="fas fa-envelope"></i> Liên hệ</a>
+    </div>
+  </nav>
+
+  <!-- Nội dung chính gồm 2 cột trái phải -->
+  <div class="container">
+    <!-- Cột trái: thông tin, sở thích, ngôn ngữ -->
+    <div class="left">
+      <img src="./IMG_7570.JPG" alt="Ảnh cá nhân" />
+      <!-- Thông tin cá nhân -->
+      <div class="section" id="thongtin">
+        <h2><i class="fas fa-address-card"></i> Thông tin cá nhân</h2>
+        <p><strong>Ngày sinh:</strong> 01/01/2001</p>
+        <p><strong>Địa chỉ:</strong> Hà Nội</p>
+        <p><strong>Email:</strong> nguyenvana@gmail.com</p>
+        <p><strong>SĐT:</strong> 0123456789</p>
+      </div>
+
+      <!-- Sở thích -->
+      <div class="section">
+        <h2><i class="fas fa-heart"></i> Sở thích</h2>
+        <ul>
+          <li>Đọc sách</li>
+          <li>Lập trình web</li>
+          <li>Chơi cầu lông</li>
+        </ul>
+      </div>
+
+      <!-- Ngôn ngữ -->
+      <div class="section">
+        <h2><i class="fas fa-language"></i> Ngôn ngữ</h2>
+        <p>Tiếng Anh - Trung cấp</p>
+        <p>Tiếng Việt - Bản ngữ</p>
+      </div>
+    </div>
+
+    <!-- Cột phải: mục tiêu, kỹ năng, chứng chỉ, dự án, liên hệ -->
+    <div class="right">
+      <!-- Mục tiêu nghề nghiệp -->
+      <div class="section" id="muctieu">
+        <h2><i class="fas fa-flag"></i> Mục tiêu nghề nghiệp</h2>
+        <p>Tôi mong muốn trở thành một lập trình viên giỏi, có thể đóng góp vào các sản phẩm công nghệ hữu ích và phát triển sự nghiệp tại một công ty công nghệ hàng đầu.</p>
+      </div>
+
+      <!-- Kỹ năng kèm thanh tiến độ -->
+      <div class="section" id="kynang">
+        <h2><i class="fas fa-tools"></i> Kỹ năng</h2>
+        <p>HTML, CSS, JavaScript</p>
+        <div class="skills-bar"><div style="width: 90%"></div></div>
+        <p>React, Node.js</p>
+        <div class="skills-bar"><div style="width: 80%"></div></div>
+        <p>Git, SQL</p>
+        <div class="skills-bar"><div style="width: 70%"></div></div>
+      </div>
+
+      <!-- Chứng chỉ và giải thưởng -->
+      <div class="section">
+        <h2><i class="fas fa-award"></i> Chứng chỉ - Giải thưởng</h2>
+        <ul>
+          <li>Chứng chỉ Fullstack Web - 2024</li>
+          <li>Không có giải thưởng chính thức</li>
+        </ul>
+      </div>
+
+      <!-- Dự án cá nhân -->
+      <div class="section" id="duan">
+        <h2><i class="fas fa-folder-open"></i> Dự án</h2>
+        <p><strong>Website quản lý sinh viên</strong>: Xây dựng bằng Node.js + PostgreSQL + Express, cho phép thêm/sửa/xóa sinh viên, đăng nhập phân quyền.</p>
+      </div>
+
+      <!-- Liên hệ mạng xã hội -->
+      <div class="section" id="lienhe">
+        <h2><i class="fas fa-paper-plane"></i> Liên hệ</h2>
+        <p><strong>Facebook:</strong> <a href="https://fb.com/nguyenvana" target="_blank">fb.com/nguyenvana</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/nguyenvana" target="_blank">github.com/nguyenvana</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/nguyenvana" target="_blank">instagram.com/nguyenvana</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script xử lý toggle menu trên thiết bị nhỏ -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbarLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

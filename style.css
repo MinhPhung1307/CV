@@ -1,0 +1,193 @@
+/* RESET VÀ CÀI ĐẶT CHUNG */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Cuộn mượt khi click menu */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner với animation */
+header {
+  background: linear-gradient(120deg, #007bff, #00d4ff);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1s ease-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+/* THANH ĐIỀU HƯỚNG (NAVBAR) */
+.navbar {
+  min-height: 40px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.navbar a:hover {
+  background-color: #3b82f6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+/* BỐ CỤC TRANG (LAYOUT 2 CỘT) */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+  padding: 30px;
+}
+
+.left {
+  background: #f9fbff;
+  border-right: 1px solid #dcdde1;
+}
+
+.left img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 200px;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* CÁC PHẦN TRONG CV (THÔNG TIN, MỤC TIÊU,...) */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: #0f172a;
+  border-bottom: 2px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 6px;
+}
+
+/* THANH KỸ NĂNG (SKILLS BAR) */
+.skills-bar {
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.skills-bar div {
+  background: #3b82f6;
+  height: 10px;
+  animation: fillBar 1.5s forwards;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE CHO MOBILE */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .navbar-links.show {
+    display: flex;
+    background-color: #1e293b;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
