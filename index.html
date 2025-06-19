@@ -4,113 +4,180 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Nguyễn Minh Phụng</title>
-  <!-- Font Awesome: Thư viện icon -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Liên kết đến file CSS riêng -->
-  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- Banner giới thiệu tên và vai trò -->
-  <header>
-    <h1>Nguyễn Minh Phụng</h1>
-    <p>Lập trình viên Fullstack</p>
-  </header>
-
-  <!-- Navbar điều hướng giữa các phần -->
-  <nav class="navbar">
-    <!-- Nút toggle hiện menu trên điện thoại -->
-    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-    <div class="navbar-links" id="navbarLinks">
-      <a href="#thongtin"><i class="fas fa-user"></i> Thông tin</a>
-      <a href="#muctieu"><i class="fas fa-bullseye"></i> Mục tiêu</a>
-      <a href="#kynang"><i class="fas fa-code"></i> Kỹ năng</a>
-      <a href="#duan"><i class="fas fa-project-diagram"></i> Dự án</a>
-      <a href="#lienhe"><i class="fas fa-envelope"></i> Liên hệ</a>
-    </div>
-  </nav>
-
-  <!-- Nội dung chính gồm 2 cột trái phải -->
-  <div class="container">
-    <!-- Cột trái: thông tin, sở thích, ngôn ngữ -->
-    <div class="left">
-      <img src="./IMG_7570.JPG" alt="Ảnh cá nhân" />
-      <!-- Thông tin cá nhân -->
-      <div class="section" id="thongtin">
-        <h2><i class="fas fa-address-card"></i> Thông tin cá nhân</h2>
-        <p><strong>Ngày sinh:</strong> 13/07/2005</p>
-        <p><strong>Địa chỉ:</strong> Hồ Chí Minh</p>
-        <p><strong>Email:</strong> nguyenminhphung1307@gmail.com</p>
-        <p><strong>SĐT:</strong> 0902528245</p>
+  
+  <div id="cv-content">
+    
+      <header data-aos="zoom-in" data-aos-duration="1000">
+        <h1 class="animate__animated animate__fadeInDown">Nguyễn Minh Phụng</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Lập trình viên Fullstack</p>
+        <blockquote class="slogan typing-effect animate__animated animate__fadeIn animate__delay-2s">"Học - Làm - Cống hiến - Thành công"</blockquote>
+      </header>
+    
+      <nav class="navbar" data-aos="fade-down" data-aos-delay="300">
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <div class="navbar-links">
+          <a href="#thongtin"><i class="fas fa-user"></i> Thông tin</a>
+          <a href="#muctieu"><i class="fas fa-bullseye"></i> Mục tiêu</a>
+          <a href="#ngonngu"><i class="fas fa-code"></i> Ngôn ngữ lập trình</a>
+          <a href="#duan"><i class="fas fa-project-diagram"></i> Dự án</a>
+          <a href="#lienhe"><i class="fas fa-envelope"></i> Liên hệ</a>
+        </div>
+      </nav>
+    
+      <div class="container">
+        <div class="left" data-aos="slide-right" data-aos-duration="800">
+          <div class="profile-image">
+            <img src="./avatar.png" alt="Ảnh cá nhân" />
+          </div>
+          
+          <div class="section" id="thongtin" data-aos="fade-up" data-aos-delay="200">
+            <h2><i class="fas fa-address-card"></i> Thông tin cá nhân</h2>
+            <p><strong>Ngày sinh:</strong> 13/07/2005</p>
+            <p><strong>Địa chỉ:</strong> 345 Tô Ký, Tân Chánh Hiệp, Quận 12, Hồ Chí Minh.</p>
+            <p><strong>Email:</strong> phungnm5866@ut.edu.vn</p>
+            <p><strong>SĐT:</strong> 0902528245</p>
+          </div>
+    
+          <div class="section" id="hocvan" data-aos="fade-up" data-aos-delay="200">
+            <h2><i class="fas fa-graduation-cap"></i> Học vấn</h2>
+            <div class="edu-item">
+                <h3>Trường Đại học Giao thông vận tải TP.HCM</h3>
+                <p><strong>Ngành:</strong> Công nghệ thông tin</p>
+                <p><strong>Thời gian:</strong> 2023 - nay</p>
+                <p><strong>GPA:</strong> 3.5 / 4.0 - Xếp loại Giỏi</p>
+                <p><strong>Thành tích:</strong> Học bổng Khuyến khích học tập, Điểm A+ môn Cấu trúc dữ liệu</p>
+            </div>
+          </div>
+          
+          <div class="section" data-aos="fade-up" data-aos-delay="400">
+            <h2><i class="fas fa-heart"></i> Sở thích</h2>
+            <ul>
+              <li>Đọc sách</li>
+              <li>Lập trình web</li>
+              <li>Chơi cầu lông</li>
+            </ul>
+          </div>
+          
+          <div class="section" data-aos="fade-up" data-aos-delay="600">
+            <h2><i class="fas fa-user-check"></i> kỹ năng</h2>  
+            <ul>
+                <li>Giao tiếp hiệu quả trong team</li>
+                <li>Giải quyết vấn đề chủ động và sáng tạo</li>
+                <li>Quản lý thời gian và làm việc đúng hạn</li>
+                <li>Thích nghi tốt với công nghệ mới</li>
+                <li>Tự học và phát triển bản thân liên tục</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="right" data-aos="slide-left" data-aos-duration="800">
+          <div class="section" id="muctieu" data-aos="fade-up" data-aos-delay="300">
+            <h2><i class="fas fa-flag"></i> Mục tiêu nghề nghiệp</h2>
+            <p>Tôi mong muốn trở thành một lập trình viên giỏi, có thể đóng góp vào các sản phẩm công nghệ hữu ích và phát triển sự nghiệp tại một công ty công nghệ hàng đầu.</p>
+          </div>
+    
+          <div class="section" id="ngonngu" data-aos="fade-up" data-aos-delay="500">
+            <h2><i class="fas fa-code   "></i> Ngôn ngữ lập trình</h2>
+            <div class="skills-container">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML, CSS, JavaScript</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skills-bar" style="--progress: 90%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">React, Node.js</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skills-bar" style="--progress: 80%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Git, SQL</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skills-bar" style="--progress: 70%"></div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="section" data-aos="fade-up" data-aos-delay="700">
+            <h2><i class="fas fa-award"></i> Chứng chỉ - Giải thưởng</h2>
+            <ul>
+              <li>Chứng chỉ Fullstack Web - 2024</li>
+              <li>Không có giải thưởng chính thức</li>
+            </ul>
+          </div>
+    
+          <div class="section" id="duan" data-aos="fade-up" data-aos-delay="900">
+            <h2><i class="fas fa-folder-open"></i> Dự án</h2>
+            <div class="project-card">
+              <h3><strong>Website quản lý sinh viên</strong></h3>
+              <p>Xây dựng bằng Node.js + MongoDB + Express, cho phép thêm/sửa/xóa sinh viên, đăng nhập phân quyền.</p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/MinhPhung1307/Shop_do_cu" target="_blank">https://github.com/MinhPhung1307/Shop_do_cu</a></p>
+            </div>
+          </div>
+    
+          <div class="section" id="lienhe" data-aos="fade-up" data-aos-delay="1100">
+            <h2><i class="fas fa-paper-plane"></i> Liên hệ</h2>
+            <p><strong>Facebook:</strong> <a href="https://fb.com/phung.nguyen.868615" target="_blank">fb.com/phung.nguyen.868615</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MinhPhung1307" target="_blank">github.com/MinhPhung1307</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/_minhphung1307/" target="_blank">instagram.com/_minhphung1307/</a></p>
+            <p><strong>Email:</strong> <a href="mailto:phungnm5866@ut.edu.vn" target="_blank">phungnm5866@ut.edu.vn</a></p>
+            
+            <div class="social-links">
+              <a href="https://fb.com/phung.nguyen.868615" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://github.com/MinhPhung1307" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com/_minhphung1307/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:phungnm5866@ut.edu.vn" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Sở thích -->
-      <div class="section">
-        <h2><i class="fas fa-heart"></i> Sở thích</h2>
-        <ul>
-          <li>Đọc sách</li>
-          <li>Lập trình web</li>
-          <li>Chơi cầu lông</li>
-        </ul>
-      </div>
-
-      <!-- Ngôn ngữ -->
-      <div class="section">
-        <h2><i class="fas fa-language"></i> Ngôn ngữ</h2>
-        <p>Tiếng Anh - Trung cấp</p>
-        <p>Tiếng Việt - Bản ngữ</p>
-      </div>
-    </div>
-
-    <!-- Cột phải: mục tiêu, kỹ năng, chứng chỉ, dự án, liên hệ -->
-    <div class="right">
-      <!-- Mục tiêu nghề nghiệp -->
-      <div class="section" id="muctieu">
-        <h2><i class="fas fa-flag"></i> Mục tiêu nghề nghiệp</h2>
-        <p>Tôi mong muốn trở thành một lập trình viên giỏi, có thể đóng góp vào các sản phẩm công nghệ hữu ích và phát triển sự nghiệp tại một công ty công nghệ hàng đầu.</p>
-      </div>
-
-      <!-- Kỹ năng kèm thanh tiến độ -->
-      <div class="section" id="kynang">
-        <h2><i class="fas fa-tools"></i> Kỹ năng</h2>
-        <p>HTML, CSS, JavaScript</p>
-        <div class="skills-bar"><div style="width: 90%"></div></div>
-        <p>React, Node.js</p>
-        <div class="skills-bar"><div style="width: 80%"></div></div>
-        <p>Git, SQL</p>
-        <div class="skills-bar"><div style="width: 70%"></div></div>
-      </div>
-
-      <!-- Chứng chỉ và giải thưởng -->
-      <div class="section">
-        <h2><i class="fas fa-award"></i> Chứng chỉ - Giải thưởng</h2>
-        <ul>
-          <li>Chứng chỉ Fullstack Web - 2024</li>
-          <li>Không có giải thưởng chính thức</li>
-        </ul>
-      </div>
-
-      <!-- Dự án cá nhân -->
-      <div class="section" id="duan">
-        <h2><i class="fas fa-folder-open"></i> Dự án</h2>
-        <p><strong>Website quản lý sinh viên</strong>: Xây dựng bằng Node.js + MongoDB + Express, cho phép thêm/sửa/xóa sinh viên, đăng nhập phân quyền.</p>
-      </div>
-
-      <!-- Liên hệ mạng xã hội -->
-      <div class="section" id="lienhe">
-        <h2><i class="fas fa-paper-plane"></i> Liên hệ</h2>
-        <p><strong>Facebook:</strong> <a href="https://fb.com/phung.nguyen.868615" target="_blank">fb.com/phung.nguyen.868615</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/MinhPhung1307" target="_blank">github.com/MinhPhung1307</a></p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/_minhphung1307/" target="_blank">instagram.com/_minhphung1307/</a></p>
-      </div>
-    </div>
+    
+      <footer data-aos="fade-up">
+        <p>&copy; 2025 Nguyễn Minh Phụng. All rights reserved.</p>
+      </footer>
+  </div>
+  <div class="download-btn">
+      <button onclick="downloadPDF()"><i class="fas fa-download"></i> Tải CV PDF</button>
   </div>
 
-  <!-- Script xử lý toggle menu trên thiết bị nhỏ -->
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navbarLinks');
-      nav.classList.toggle('show');
-    }
-  </script>
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+ 
+  <script src="./index.js"></script>
+   
 </body>
 </html>
